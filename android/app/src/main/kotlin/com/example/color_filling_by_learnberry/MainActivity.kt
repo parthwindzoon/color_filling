@@ -1,4 +1,4 @@
-package com.example.color_filling_by_learnberry
+package com.learnberry.fillFactory
 
 import io.flutter.embedding.android.FlutterActivity
 
