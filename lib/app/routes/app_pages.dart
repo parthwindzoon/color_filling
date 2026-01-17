@@ -1,9 +1,11 @@
 import 'package:get/get.dart';
 
 import '../ui/bindings/coloring_bindings.dart';
+import '../ui/bindings/home_binding.dart';
 import '../ui/bindings/image_selection_binding.dart';
 import '../ui/bindings/splash_bindings.dart';
 import '../ui/views/coloring_view.dart';
+import '../ui/views/home_view.dart';
 import '../ui/views/image_selection_view.dart';
 import '../ui/views/splash_view.dart';
 
@@ -19,6 +21,11 @@ class AppPages {
       name: Routes.SPLASH,
       page: () => const SplashView(),
       binding: SplashBinding(),
+    ),
+    GetPage(
+      name: Routes.HOME,
+      page: () => const HomeView(),
+      binding: HomeBinding(),
     ),
     GetPage(
       name: Routes.IMAGE_SELECTION,

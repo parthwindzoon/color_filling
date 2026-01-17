@@ -15,7 +15,7 @@ class ImageSelectionView extends GetView<ImageSelectionController> {
     return Stack(
       fit: StackFit.expand,
       children: [
-        Image.asset('assets/images/image.png', fit: BoxFit.cover),
+        Image.asset('assets/images/bg1.jpg', fit: BoxFit.cover),
         Stack(
           children: [
             // Title (animated from top) - Similar to mini games
@@ -85,6 +85,11 @@ class ImageSelectionView extends GetView<ImageSelectionController> {
                   },
                 ),
               ),
+            ),
+            Positioned(
+              top: 20,
+              left: 20,
+              child: GestureDetector(onTap: () => Get.back(), child: Image.asset('assets/images/back_btn.png', width: 60)),
             ),
           ],
         ),

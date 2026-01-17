@@ -27,19 +27,19 @@ class SplashController extends GetxController {
       videoController.addListener(() {
         if (videoController.value.position >= videoController.value.duration) {
           // Video finished, navigate to image selection
-          _navigateToImageSelection();
+          _navigateToHome();
         }
       });
     } catch (e) {
       // If video fails to load, navigate immediately
       print('Error loading splash video: $e');
-      _navigateToImageSelection();
+      _navigateToHome();
     }
   }
 
-  void _navigateToImageSelection() {
+  void _navigateToHome() {
     Future.delayed(const Duration(milliseconds: 500), () {
-      Get.offNamed(Routes.IMAGE_SELECTION);
+      Get.offNamed(Routes.HOME);
     });
   }
 
